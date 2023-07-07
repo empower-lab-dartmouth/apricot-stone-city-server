@@ -11,6 +11,10 @@ const tooManyBags = make.module({
                     type: 'text',
                     text: `With his suit jacket and two of his ties in one hand, and his carry-on in the other hand, Norman exits the plane and follows the crowd to the luggage carousel. Despite his fatigue from the flight, he looks excitedly around at his first glimpses of Armenia. He loves the look of the Armenian letters on each sign, all curves and tails to his fresh eyes. After waiting a few minutes amongst the other travelers, he sees his large green luggage come around the carousel and realizes he has an issue after he grabs it. Between his carry-on, his suit jacket and ties, and the luggage, he has no free hands! How will he make it out to the taxi in this state?`,
                 },
+                {
+                    type: 'image',
+                    src: 'https://m.media-amazon.com/images/I/81bQlm7vf6L._AC_UY1100_.jpg',
+                },
             ],
             choices: [
                 {

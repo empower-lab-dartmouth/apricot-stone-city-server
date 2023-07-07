@@ -11,6 +11,10 @@ const normanOnPlane = make.module({
                     type: 'text',
                     text: `Welcome to Apricot Stone City, an interactive storytelling game.`,
                 },
+                {
+                    type: 'image',
+                    src: 'https://cdn.britannica.com/69/155469-131-14083F59/airplane-flight.jpg',
+                },
             ],
             choices: [
                 {

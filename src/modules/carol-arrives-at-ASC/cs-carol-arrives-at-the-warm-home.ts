@@ -12,6 +12,10 @@ const atTheWarmHouse = make.module({
                     text:
                         'Carol, a curious and open-minded woman, found herself standing at the foot of the Cascade, a magnificent memorial with cascading steps. The memorial stood tall, symbolizing the collective memory and resilience of a people. As she marveled at the beauty of the monument, Carol couldn\'t help but notice the intricate details carved into each step, representing the lives lost in the Armenian genocide. Suddenly, a kind voice broke her reverie. It was Anoush, a warm-hearted individual who had a deep connection to the memorial. Anoush recognized Carol\'s curiosity and began to share the story behind the monument, explaining the significance of each feature and its encoded meaning. As Carol delved deeper into her metaphorical exploration, she unraveled five fundamental ideas about comparing datasets: Idea 1: Real-world datasets - The story revolves around the comparison of real-world datasets, which are analogous to the features comprising the Cascade memorial in the story. Idea 2: Features and their composition - The intricate carvings on the steps of the memorial represent the features of the dataset, highlighting the importance of understanding the composition of features in datasets. Idea 3: Encoding of features - The encoded meaning behind each carving on the steps of the memorial mirrors how features in datasets are encoded, emphasizing the significance of decoding and interpreting the information they hold. Idea 4: Comparing datasets: Just as Carol learns about the stories and history embedded in the memorial\'s features, comparing datasets involves analyzing their features to identify similarities and differences, leading to valuable insights. Idea 5: Uncovering meaningful insights - By exploring the composition and encoding of features, both in the memorial and datasets, Carol discovers the hidden narratives and stories within the data, reflecting the power of uncovering meaningful insights through dataset comparison.',
                 },
+                {
+                    type: 'image',
+                    src: 'https://officesnapshots.com/wp-content/uploads/2015/04/github-office-design-12-700x467.jpg',
+                },
             ],
             choices: [
                 {
@@ -786,7 +790,7 @@ const atTheWarmHouse = make.module({
             ],
             choices: [
                 {
-                    text: 'Home',
+                    text: 'Eat Dinner',
                     logic: [
                         {
                             do: [
@@ -795,8 +799,8 @@ const atTheWarmHouse = make.module({
                                     path: [
                                         'root',
                                         'carol-arrives-at-ASC',
-                                        'at-the-warm-home',
-                                        'around-the-table',
+                                        'having-dinner',
+                                        'arrive-to-the-house',
                                     ],
                                 },
                             ],

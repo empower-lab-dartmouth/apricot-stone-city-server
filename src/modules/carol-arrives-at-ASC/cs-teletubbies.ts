@@ -16,6 +16,10 @@ const teletubbies = make.module({
                     text:
                         'She looks outside the window. Its still dark outside. She tries to sleep again, but in the corner of her eye she detects something weird: the dolls',
                 },
+                {
+                    type: 'image',
+                    src: 'https://www.multipet.com/media/Teletubbies-Asst-Touching_.png',
+                },
             ],
 
             choices: [

@@ -34,6 +34,10 @@ const silkRoadHotel = make.module({
                     type: 'text',
                     text: '<i>Certainly! They are from our garden!</i>',
                 },
+                {
+                    type: 'image',
+                    src: 'https://static.independent.co.uk/2023/03/24/09/Best%20New%20York%20boutique%20hotels.jpg',
+                },
             ],
             choices: [
                 {

@@ -21,6 +21,10 @@ const havingDinner = make.module({
                     text:
                         '<b>Carol, Arpi and Anoush just enter Anoushs house. From the outside the house looks small, and Carol even wonders if they have a room for her. But then she enters the house she gets surprised how big it is from inside. A big red carpet hanged on the wall catches Carols attention. There are noises of children playing outside the house. Carols nose smells delicious smell of something sweet. Carol wants to ask so many questions about the strange carpet on the wall, or why there are so many children in the house, but suddenly an old man with half bald half white hair, tall wearing old cloths but with a warm smile and handsome voice steps in front of them and says: "Barev, Carol jan. Hameceq hameceq</b>',
                 },
+                {
+                    type: 'image',
+                    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Family_eating_meal.jpg/1200px-Family_eating_meal.jpg',
+                },
             ],
             choices: [
                 {
