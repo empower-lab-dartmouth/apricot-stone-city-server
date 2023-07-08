@@ -173,6 +173,7 @@ const arrivalAtThreeBroomsticks = make.module({
                                 {
                                     type: 'goto',
                                     path: [
+                                        'root',
                                         'training-data',
                                         'norman-picks-Butterbeer',
                                         'introduction',

@@ -118,13 +118,18 @@ const silkRoadHotel = make.module({
             ],
             choices: [
                 {
-                    text: 'return to begining',
+                    text: 'find taxi for Norman',
                     logic: [
                         {
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['root', '/start'],
+                                    path: [
+                                        'root',
+                                        'intro-to-ai-general',
+                                        'cs.norman-and-the-taxi-driver-intro-to-ai',
+                                        'intro-to-ai-introduction',
+                                    ],
                                 },
                             ],
                         },
