@@ -52,24 +52,24 @@ const root = make.module({
                         },
                     ],
                 },
-                {
-                    text: 'Minigame',
-                    logic: [
-                        {
-                            do: [
-                                {
-                                    type: 'goto',
-                                    path: [
-                                        'root',
-                                        'carol-arrives-at-ASC',
-                                        'hot-and-cold-minigame',
-                                        'intro',
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
+                // {
+                //     text: 'Minigame',
+                //     logic: [
+                //         {
+                //             do: [
+                //                 {
+                //                     type: 'goto',
+                //                     path: [
+                //                         'root',
+                //                         'carol-arrives-at-ASC',
+                //                         'hot-and-cold-minigame',
+                //                         'intro',
+                //                     ],
+                //                 },
+                //             ],
+                //         },
+                //     ],
+                // },
             ],
         },
         {
