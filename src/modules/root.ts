@@ -46,7 +46,7 @@ const root = make.module({
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['root', 'get-info-name'],
+                                    path: ['root', 'get-info-email'],
                                 },
                             ],
                         },
@@ -99,127 +99,127 @@ const root = make.module({
             ],
         },
 
-        {
-            id: 'get-info-name',
-            convo: [
-                {
-                    type: 'text',
-                    text: 'Please Enter Your name using the keyboard',
-                },
-            ],
-            choices: [
-                {
-                    text:
-                        'please input text on your keyboard, ignore this button',
-                    logic: [],
-                },
-            ],
-            default: [
-                {
-                    if: state =>
-                        state.lastTextMessage ==
-                        'please input text on your keyboard, ignore this button',
-                    do: [
-                        {
-                            type: 'goto',
-                            path: ['enter-again'],
-                        },
-                    ],
-                    otherwise: [
-                        {
-                            type: 'update-state',
-                            update: state => ({
-                                username: state.lastTextMessage,
-                            }),
-                        },
-                        {
-                            type: 'goto',
-                            path: ['check-name'],
-                        },
-                    ],
-                },
-            ],
-        },
-        {
-            id: 'check-name',
-            convo: [
-                {
-                    type: 'text',
-                    text: state =>
-                        `Thanks you entered ${state.username} as your name, is it correct?`,
-                },
-            ],
-            choices: [
-                {
-                    text: 'yes',
-                    logic: [
-                        {
-                            do: [
-                                {
-                                    type: 'goto',
-                                    path: ['get-info-email'],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    text: 'no',
-                    logic: [
-                        {
-                            do: [
-                                {
-                                    type: 'goto',
-                                    path: ['get-info-name'],
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ],
-        },
-        {
-            id: 'enter-again',
-            convo: [
-                {
-                    type: 'text',
-                    text:
-                        'Please enter your real name, and dont use the buttons, use the keyboard instead!',
-                },
-            ],
-            choices: [
-                {
-                    text:
-                        'please input text on your keyboard, ignore this button',
-                    logic: [],
-                },
-            ],
-            default: [
-                {
-                    if: state =>
-                        state.lastTextMessage ===
-                        'please input text on your keyboard, ignore this button',
-                    do: [
-                        {
-                            type: 'goto',
-                            path: ['enter-again'],
-                        },
-                    ],
-                    otherwise: [
-                        {
-                            type: 'update-state',
-                            update: state => ({
-                                username: state.lastTextMessage,
-                            }),
-                        },
-                        {
-                            type: 'goto',
-                            path: ['check-name'],
-                        },
-                    ],
-                },
-            ],
-        },
+        // {
+        //     id: 'get-info-name',
+        //     convo: [
+        //         {
+        //             type: 'text',
+        //             text: 'Please Enter Your name using the keyboard',
+        //         },
+        //     ],
+        //     choices: [
+        //         {
+        //             text:
+        //                 'please input text on your keyboard, ignore this button',
+        //             logic: [],
+        //         },
+        //     ],
+        //     default: [
+        //         {
+        //             if: state =>
+        //                 state.lastTextMessage ==
+        //                 'please input text on your keyboard, ignore this button',
+        //             do: [
+        //                 {
+        //                     type: 'goto',
+        //                     path: ['enter-again'],
+        //                 },
+        //             ],
+        //             otherwise: [
+        //                 {
+        //                     type: 'update-state',
+        //                     update: state => ({
+        //                         username: state.lastTextMessage,
+        //                     }),
+        //                 },
+        //                 {
+        //                     type: 'goto',
+        //                     path: ['check-name'],
+        //                 },
+        //             ],
+        //         },
+        //     ],
+        // },
+        // {
+        //     id: 'check-name',
+        //     convo: [
+        //         {
+        //             type: 'text',
+        //             text: state =>
+        //                 `Thanks you entered ${state.username} as your name, is it correct?`,
+        //         },
+        //     ],
+        //     choices: [
+        //         {
+        //             text: 'yes',
+        //             logic: [
+        //                 {
+        //                     do: [
+        //                         {
+        //                             type: 'goto',
+        //                             path: ['get-info-email'],
+        //                         },
+        //                     ],
+        //                 },
+        //             ],
+        //         },
+        //         {
+        //             text: 'no',
+        //             logic: [
+        //                 {
+        //                     do: [
+        //                         {
+        //                             type: 'goto',
+        //                             path: ['get-info-name'],
+        //                         },
+        //                     ],
+        //                 },
+        //             ],
+        //         },
+        //     ],
+        // },
+        // {
+        //     id: 'enter-again',
+        //     convo: [
+        //         {
+        //             type: 'text',
+        //             text:
+        //                 'Please enter your real name, and dont use the buttons, use the keyboard instead!',
+        //         },
+        //     ],
+        //     choices: [
+        //         {
+        //             text:
+        //                 'please input text on your keyboard, ignore this button',
+        //             logic: [],
+        //         },
+        //     ],
+        //     default: [
+        //         {
+        //             if: state =>
+        //                 state.lastTextMessage ===
+        //                 'please input text on your keyboard, ignore this button',
+        //             do: [
+        //                 {
+        //                     type: 'goto',
+        //                     path: ['enter-again'],
+        //                 },
+        //             ],
+        //             otherwise: [
+        //                 {
+        //                     type: 'update-state',
+        //                     update: state => ({
+        //                         username: state.lastTextMessage,
+        //                     }),
+        //                 },
+        //                 {
+        //                     type: 'goto',
+        //                     path: ['check-name'],
+        //                 },
+        //             ],
+        //         },
+        //     ],
+        // },
         {
             id: 'get-info-email',
             convo: [
