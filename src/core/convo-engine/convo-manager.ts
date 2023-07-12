@@ -363,7 +363,7 @@ export const convoManagerConstructor: ConvoManagerConstructor = (
                     )
                     const returningToPageResponse = 'Welcome back!';
                     let defaultResponse = userInput === 'Returning to a scene!' ? 
-                    returningToPageResponse : `Sorry, I don't recognize your response of <i>${userInput}</i> right now. Try responding with one of the buttons in the chat keyboard.`
+                    returningToPageResponse : `To proceed, please click a button from the chat options below, thanks!`
                     
                     logEventToRemote({
                         type: 'unrecognized-response',
