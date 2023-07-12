@@ -606,20 +606,6 @@ const taxiToDestination = make.module({
             ],
             choices: [
                 {
-                    text: 'Defining the goal or target the algorithm should achieve',
-                    correctAnswer: false,
-                    logic: [
-                        {
-                            do: [
-                                {
-                                    type: 'goto',
-                                    path: ['q4incorrect'],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
                     text: 'Analyzing the nature of the problem and data',
                     correctAnswer: false,
                     logic: [
