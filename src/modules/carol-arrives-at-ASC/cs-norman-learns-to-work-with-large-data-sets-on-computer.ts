@@ -109,7 +109,7 @@ const normanLearnsToWorkWithLargeDataSetsOnComputer = make.module({
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['completed'],
+                                    path: ['bias-in-data-minigame'],
                                 },
                             ],
                         },
@@ -148,6 +148,39 @@ const normanLearnsToWorkWithLargeDataSetsOnComputer = make.module({
                                 {
                                     type: 'goto',
                                     path: ['q1'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            id: 'bias-in-data-minigame',
+            convo: [
+                {
+                    type: 'text',
+                    text: `That's correct! To see this concept in practice, try training a classifier that is suppsed to recognize pictures of butterflies.`,
+                },
+                {
+                    type: 'text',
+                    text: `See what happens when you don't provide enough training examples, either labelled as posititve or negative, what happens?`
+                },
+                {
+                    type: 'text',
+                    text: 'https://guessingai.onrender.com/'
+                }
+            ],
+            choices: [
+                {
+                    text: 'Done',
+                    correctAnswer: false,
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['completed'],
                                 },
                             ],
                         },
