@@ -21,6 +21,7 @@ import rideTaxi from './cs-ride-taxi'
 import walkToDestination from './cs-walk-to-destination'
 import taxiToDestination from './cs-taxi-to-destination'
 import pickupFromCascade from './cs-pickup-from-cascade'
+import normanLearnsToWorkWithLargeDataSetsOnComputer from './cs-norman-learns-to-work-with-large-data-sets-on-computer'
 
 const carolArrivesAtASC = make.module({
     id: 'carol-arrives-at-ASC',
@@ -45,6 +46,7 @@ const carolArrivesAtASC = make.module({
         walkToDestination,
         taxiToDestination,
         pickupFromCascade,
+        normanLearnsToWorkWithLargeDataSetsOnComputer,
     ],
     convoSegments: [],
 })
