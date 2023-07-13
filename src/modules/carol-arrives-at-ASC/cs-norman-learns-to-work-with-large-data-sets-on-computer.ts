@@ -160,7 +160,7 @@ const normanLearnsToWorkWithLargeDataSetsOnComputer = make.module({
             convo: [
                 {
                     type: 'text',
-                    text: `Great job! Let’s continue the journey`,
+                    text: `Great job! Let’s continue your journey`,
                 },
             ],
             choices: [
