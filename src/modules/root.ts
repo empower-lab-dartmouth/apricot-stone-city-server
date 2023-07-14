@@ -13,6 +13,7 @@ import IntroToAI from './missions/intro to AI/n-intro-to-ai'
 import { userInfo } from 'os'
 import { unsafeInsertAt } from 'fp-ts/lib/Array'
 import { state } from 'fp-ts/lib/State'
+import { logic } from '../core/util/make/unvalidated-type-constructors'
 
 const root = make.module({
     id: 'root',
@@ -30,6 +31,34 @@ const root = make.module({
     convoSegments: [
         {
             id: '/start',
+            convo: [
+                {
+                    type: 'image',
+                    src: 'https://impact100.org/wp-content/uploads/2019/12/New-Member-Welcome.jpg'
+                },
+                {
+                    type: 'text',
+                    text: `awesome, looks like you've got the hang of this`
+                }
+            ],
+            choices: [
+                {
+                text: `yeah!`,
+                logic: [
+                    {
+                        do: [
+                            {
+                                type: 'goto',
+                                path: ['intro2'],
+                            },
+                        ],
+                    },
+                ],
+            }
+            ]
+        },
+        {
+            id: 'intro2',
             convo: [
                 {
                     type: 'text',
