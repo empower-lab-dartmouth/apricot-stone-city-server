@@ -34,19 +34,43 @@ const root = make.module({
                 {
                     type: 'text',
                     text:
-                        'Welcome to Apricot Stone City, an interactive storytelling game about life in Yerevan, machine learning, and free will.\n\n Before we continue, is this a new account, or is there a different person playing from this account?',
+                        'Welcome to Apricot Stone City, an interactive storytelling game about AI.',
                 },
+                {
+                    type: 'text',
+                    text:
+                        `As you make decisions, the story scenes will continue. At the end of each scene you'll be asked for your feedback.`,
+                },
+                {
+                    type: 'text',
+                    text:
+                        `Please see the accompanying user guide for help on getting started and progressing to level 4.`,
+                },
+                {
+                    type: 'text',
+                    text:
+                        `https://docs.google.com/document/d/1dGM6VmYm8uogrF40hFD-QIkLG6L-w_PWuGw2wPpzXDM/edit`,
+                },
+                {
+                    type: 'text',
+                    text:
+                        `The linked videos are particularly useful. Welcome again to the game and enjoy the journey!`,
+                },
+                
             ],
             choices: [
                 {
                     text:
-                        'Yes, it is my first time or someone else was playing before',
+                        `Sounds good! I'm all ready`,
                     logic: [
                         {
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['root', 'get-info-email'],
+                                    path: ['root',
+                                    'carol-arrives-at-ASC',
+                                    'on-the-plane',
+                                    'opening'],
                                 },
                             ],
                         },
