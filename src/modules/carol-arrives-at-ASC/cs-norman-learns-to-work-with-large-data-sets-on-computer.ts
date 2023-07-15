@@ -174,7 +174,46 @@ const normanLearnsToWorkWithLargeDataSetsOnComputer = make.module({
             choices: [
                 {
                     text: 'Done',
-                    correctAnswer: false,
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['ImageNet'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        }, 
+        {
+            id: 'ImageNet',
+            convo: [
+                {
+                    type: 'text',
+                    text: `In playing the minigame earlier, you may have observed that adding too few training examples for either classification (positive or negative) generally results in inaccurate results on test data.`,
+                },
+                {
+                    type: 'text',
+                    text: `This can result in serious problems when it occurs in the real world. For instance, this was an issue with the ImageNet dataset, a widely used benchmark dataset for image classification tasks that consisted of millions of labeled images spanning thousands of categories. Among other concerning findings, images of white men were far more common than other demographic groups for the label “computer programmer”. This thus resulted in classification errors for images of people who were not white men sitting at computers and doing the task of programming.`,
+                },
+                {
+                    type: 'text',
+                    text: 'As image classification becomes more common in tools that we use everyday, such as Google Photos, maps, and self-driving cars, algorithms that show biases like these can be dangerous and harmful to society because then can result in models that perform poorly on underrepresented classes or exhibit discriminatory behavior.'
+                },
+                {
+                    type: 'text',
+                    text: 'For more information, you can dig deeper into this topic here:'
+                },
+                {
+                    type: 'text',
+                    text: 'https://venturebeat.com/business/researchers-show-that-computer-vision-algorithms-pretrained-on-imagenet-exhibit-multiple-distressing-biases/'
+                }
+            ],
+            choices: [
+                {
+                    text: 'Continue',
                     logic: [
                         {
                             do: [
