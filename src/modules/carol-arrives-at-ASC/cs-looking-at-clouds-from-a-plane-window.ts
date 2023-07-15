@@ -157,6 +157,46 @@ const lookingAtClouds = make.module({
             ],
             choices: [
                 {
+                    text: 'Done',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['real-life-example'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        }, 
+        {
+            id: 'real-life-example',
+            convo: [
+                {
+                    type: 'text',
+                    text: `Here's an interesting real-life example connected to the topic of learning algorithms:`,
+                },
+                {
+                    type: 'text',
+                    text: `Supervised Learning Example: In the field of medicine, supervised learning algorithms have been used to develop systems that can assist in diagnosing diseases. One notable example is the detection of skin cancer using deep learning. Researchers at Stanford University trained a deep learning model using a dataset of images of skin lesions with corresponding labels indicating whether the lesion was cancerous or benign. The model learned to identify patterns and features in the images that are indicative of skin cancer. When tested on new, unseen images, the model achieved accuracy comparable to that of experienced dermatologists. This application demonstrates how supervised learning algorithms can learn from labeled data to make accurate predictions, similar to how humans learn from feedback and guidance.`,
+                },
+                {
+                    type: 'text',
+                    text: 'Link to the story: '
+                },
+                {
+                    type: 'text',
+                    text: `Deep learning algorithm does as well as dermatologists in identifying skin cancer (Stanford Medicine):`
+                },
+                {
+                    type: 'text',
+                    text: `https://news.stanford.edu/press/view/12239#:~:text=January%2025%2C%202017-,Deep%20learning%20algorithm%20does%20as%20well%20as%20dermatologists%20in%20identifying,algorithm%20to%20diagnose%20skin%20cancer.&text=It's%20scary%20enough%20making%20a,strange%20mole%20could%20be%20cancerous.`
+                }
+            ],
+            choices: [
+                {
                     text: 'Dive into a topic',
                     logic: [
                         {
