@@ -152,7 +152,7 @@ const lookingAtClouds = make.module({
                 },
                 {
                     type: 'text',
-                    text: 'Use this mini-game to explore more about feature selection: guessingai.onrender.com',
+                    text: 'Use this mini-game to explore more about feature selection. What you are going to do is train a classifier that can recognize pictures. Also, pay attention to provide enough training examples. Go check it out!: guessingai.onrender.com',
                 },
             ],
             choices: [
