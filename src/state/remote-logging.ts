@@ -1,8 +1,5 @@
-import { collection, doc, setDoc } from 'firebase/firestore'
-import { env } from 'process'
 import { LogToRemoteEvent } from '../core/models/state/remote-logging-event'
 import { REMOTE_BOT_TOKEN } from '../storyteller-config'
-import { firebaseDB } from './firebase'
 
 const EVENTS_ENV = 'loggingEvents'
 
