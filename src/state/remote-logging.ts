@@ -1,8 +1,10 @@
+<<<<<<< HEAD
 
 import { env } from 'process'
+=======
+>>>>>>> cacc8fbbc47113e1b09c86ef98850536d35dc0c0
 import { LogToRemoteEvent } from '../core/models/state/remote-logging-event'
 import { REMOTE_BOT_TOKEN } from '../storyteller-config'
-import { firebaseDB } from './firebase'
 
 const EVENTS_ENV = 'loggingEvents'
 

@@ -684,7 +684,7 @@ const liaTestRun = make.module({
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['completed'],
+                                    path: ['logo-minigame'],
                                 },
                             ],
                         },
@@ -758,7 +758,90 @@ const liaTestRun = make.module({
                 },
             ],
         },
-
+        {
+            id: 'logo-minigame',
+            convo: [
+                {
+                    type: 'text',
+                    text: `That's correct! To have a more interactive example Lia recommends a logo recognizer AI game. The game presents the player with a collection of logos from various brands. The player takes on the role of an AI trainer and is tasked with training an AI model to recognize these logos.`,
+                },
+                {
+                    type: 'text',
+                    text: `The player starts with a basic AI model that has no knowledge of the logos. The player must feed the AI model labeled training data by selecting a logo and providing the correct label for it.`
+                },
+                {
+                    type: 'text',
+                    text: `The AI model initially makes random guesses, but as the player provides more labeled data, the model starts improving its recognition accuracy. The game displays the learning progress of the AI model, showing how it adjusts its parameters based on the labeled data.`
+                },
+                {
+                    type: 'text',
+                    text: `The player encounters different scenarios that highlight the various learning concepts: a) Supervised Learning Scenario: The player is given a set of logos with correct labels and the AI model learns to recognize them based on the provided data. b) Unsupervised Learning Scenario: The player is presented with logos without any labels. The AI model learns to cluster similar logos together based on their visual similarities. c) Reinforcement Learning Scenario: The player faces challenging logo recognition situations where the correct label is unknown. The AI model learns from feedback and reinforcement to make informed guesses.`
+                },
+                {
+                    type: 'text',
+                    text: `The game provides feedback on the AI model's performance, showcasing how the learning process improves recognition accuracy over time. The player's goal is to achieve high accuracy in logo recognition by training the AI model effectively, demonstrating the power and effectiveness of different learning approaches.`
+                },
+                {
+                    type: 'text',
+                    text: 'Play the sample game here- https://ai.thestempedia.com/project/make-logo-quiz-using-the-artificial-intelligence-extension-in-pictoblox/ '
+                }
+            ],
+            choices: [
+                {
+                    text: 'Done',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['AIconsequences'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        }, 
+        {
+            id: 'AIconsequences',
+            convo: [
+                {
+                    type: 'text',
+                    text: `As Lia took the stage to deliver her speech on the Nature of Learning, she incorporated the knowledge from the article on the significance of understanding consequences in artificial intelligence. She emphasized the crucial role of causality in the learning process, highlighting its potential to transform the capabilities of machines.`,
+                },
+                {
+                    type: 'text',
+                    text: `Lia began by discussing how traditional AI systems excel at recognizing patterns and making predictions based on correlations in data. However, she acknowledged that without a deep understanding of causality, these systems fall short when it comes to comprehending cause and effect relationships, hindering their decision-making abilities.`,
+                },
+                {
+                    type: 'text',
+                    text: 'Drawing inspiration from an article she read, Lia explained that incorporating causality into AI algorithms is a vital step towards enabling machines to make more accurate decisions and adapt to changing circumstances. She highlighted the concept of causal inference, a mathematical approach to establishing cause and effect relationships, as a powerful tool for enhancing AIs understanding of the world.'
+                },
+                {
+                    type: 'text',
+                    text: 'Expanding further, Lia shared how incorporating causality into AI algorithms could revolutionize various domains. In medical research, AI systems with causal reasoning abilities could uncover new insights into biological mechanisms and lead to the development of more effective drugs. Lia emphasized the significance of understanding consequences and causality in the Nature of Learning. She envisioned a future where machines possess a deep understanding of cause and effect relationships, enabling them to learn, adapt, and make decisions more effectively. By embracing causality, the possibilities for AI-driven advancements across various industries and domains could be truly transformative.'
+                },
+                {
+                    type: 'text',
+                    text: 'Read the article now- https://www.nature.com/articles/d41586-023-00577-1'
+                }
+            ],
+            choices: [
+                {
+                    text: 'Continue',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['completed'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
         {
             id: 'completed',
             convo: [
