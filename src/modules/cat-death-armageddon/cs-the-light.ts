@@ -1,15 +1,15 @@
 import make from '../../core/util/make'
 
-const nuclearArmageddon = make.module({
-    id: 'nuclear-Armageddon',
+const theLight = make.module({
+    id: 'the-Light',
     submodules: [],
     convoSegments: [
         {
-            id: 'chaos-bombs',
+            id: 'you-see-it',
             convo: [
                 {
                     type: 'text',
-                    text: `You stand paralyzed, wide-eyed, as the world around you crumbles into chaos. The once familiar streets, now consumed by a raging inferno, bear witness to the merciless rain of nuclear bombs. Each explosion tears through your heart, the deafening blasts reverberating in your soul. The air thickens with the acrid scent of destruction, mingling with the anguish that grips your very core. Your whiskers tremble as tears mingle with the ashes, as you watch helplessly, a small feline amidst the apocalyptic symphony of devastation.`,
+                    text: `THIS IS ONLY A TEST`,
                 },
             ],
             choices: [
@@ -134,7 +134,7 @@ const nuclearArmageddon = make.module({
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['root', 'cat-arrives-at-ASC', 'the-Light', 'you-see-it'],
+                                    path: ['you-see-it'],
                                 },
                             ],
                         },
@@ -145,4 +145,4 @@ const nuclearArmageddon = make.module({
     ],
 })
 
-export default nuclearArmageddon
+export default theLight
