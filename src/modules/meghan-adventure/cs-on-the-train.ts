@@ -786,7 +786,7 @@ const meghanOnTheTrain = make.module({
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['completed'],
+                                    path: ['reinforcement-learning-minigame'],
                                 },
                             ],
                         },
@@ -846,7 +846,38 @@ const meghanOnTheTrain = make.module({
                 },
             ],
         },
-
+        {
+            id: 'reinforcement-learning-minigame',
+            convo: [
+                {
+                    type: 'text',
+                    text: `Wonderful! Before going further, let's play a small mini-game to test your knowledge on reinforcement learning.`,
+                },
+                {
+                    type: 'text',
+                    text: `Go to the URL below and select "Reinforcement Learning" to start the game!`,
+                },
+                {
+                    type: 'text',
+                    text: `https://learnml.eu/artbot.php`,
+                }
+            ],
+            choices: [
+                {
+                    text: 'Finish the minigame',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['completed'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
         {
             id: 'completed',
             convo: [
@@ -878,7 +909,6 @@ const meghanOnTheTrain = make.module({
                 
             ],
         },
-
     ],
 })
 
