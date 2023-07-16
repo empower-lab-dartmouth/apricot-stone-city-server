@@ -23,6 +23,7 @@ import taxiToDestination from './cs-taxi-to-destination'
 import pickupFromCascade from './cs-pickup-from-cascade'
 import normanLearnsToWorkWithLargeDataSetsOnComputer from './cs-norman-learns-to-work-with-large-data-sets-on-computer'
 import lookingAtClouds from './cs-looking-at-clouds-from-a-plane-window'
+import liaTestRun from './cs-lia-test-run'
 
 const carolArrivesAtASC = make.module({
     id: 'carol-arrives-at-ASC',
@@ -49,6 +50,7 @@ const carolArrivesAtASC = make.module({
         taxiToDestination,
         pickupFromCascade,
         normanLearnsToWorkWithLargeDataSetsOnComputer,
+        liaTestRun,
     ],
     convoSegments: [],
 })
