@@ -451,7 +451,7 @@ const youBecomeACat = make.module({
                                         'root',
                                         'cat-arrives-at-ASC',
                                         'nuclear-Armageddon',
-                                        'TEST123CAT',
+                                        'chaos-bombs',
                                     ],
                                 },
                             ],
