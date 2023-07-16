@@ -1,6 +1,6 @@
 import make from '../../core/util/make'
 
-const picksButterbeer = make.module({
+const nuclearArmageddon = make.module({
     id: 'nuclear-Armageddon',
     submodules: [],
     convoSegments: [
@@ -145,4 +145,4 @@ const picksButterbeer = make.module({
     ],
 })
 
-export default picksButterbeer
+export default nuclearArmageddon
