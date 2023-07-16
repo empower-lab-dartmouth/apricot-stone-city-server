@@ -422,7 +422,7 @@ const hotAndCold = make.module({
                     ],
                 },
                 {
-                    text: 'quit',
+                    text: 'Norman\'s Adventure',
                     logic: [
                         {
                             do: [
@@ -432,6 +432,24 @@ const hotAndCold = make.module({
                                         'root', 
                                         'norman-arrives-at-ASC', 
                                         'norman-on-the-plane', 
+                                        'setting'
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    text: 'Meghan\'s Adventure',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: [
+                                        'root', 
+                                        'meghan-arrives-at-ASC', 
+                                        'meghan-on-the-train', 
                                         'setting'
                                     ],
                                 },
