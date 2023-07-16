@@ -811,6 +811,25 @@ const pickupFromCascade = make.module({
                         },
                     ],
                 },
+
+                {
+                    text: 'see god itself, change the matrix, become a cat',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: [
+                                        'root',
+                                        'cat-arrives-at-ASC',
+                                        'you-become-a-cat',
+                                        'cat-beginning',
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
                 
             ],
         },

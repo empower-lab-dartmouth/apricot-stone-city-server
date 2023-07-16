@@ -5,6 +5,7 @@ import log from '../core/util/logging'
 import NormanLearnsAboutGradientDescent from './missions/Norman-learns-about-gradient-descent/n-Norman-learns-about-gradient-descent'
 import carolArrivesAtASC from './carol-arrives-at-ASC/n-carol-arrives-at-ASC'
 import normanArrivesAtASC from './norman-adventure/n-norman-adventures'
+import catArrivesAtASC from './cat-death-armageddon/n-cat-adventures'
 import normanLearnsKMeans from './missions/unsupervised-learning/n-k-means'
 import normanLearnsAboutTrainingData from './missions/training-data/n-training-data'
 import normancreatespell from './missions/norman-in-hogwarts/n-norman-training-data'
@@ -27,6 +28,7 @@ const root = make.module({
         normancreatespell,
         NormanNeuralNetwork,
         IntroToAI,
+        catArrivesAtASC
     ],
     convoSegments: [
         {
