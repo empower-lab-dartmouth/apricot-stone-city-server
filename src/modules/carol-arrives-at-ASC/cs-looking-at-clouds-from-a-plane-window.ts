@@ -220,7 +220,7 @@ const lookingAtClouds = make.module({
                 },
                 {
                     type: 'text',
-                    text: 'Ever played the famous google doole game, Quick, Draw! ? Well, it is a good example that shows model training by guessing what you are drawing off of previous drawings by other people.',
+                    text: 'Ever played the famous google doodle game, Quick, Draw! ? Well, it is a good example that shows model training by guessing what you are drawing off of previous drawings by other people.',
                 },
             ],
             choices: [
