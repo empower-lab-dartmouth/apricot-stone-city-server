@@ -218,6 +218,38 @@ const lookingAtClouds = make.module({
                     type: 'text',
                     text: `After delving into the realm of data preprocessing, Carol's curiosity led her to explore the topic of feature selection. She learned that feature selection played a vital role in machine learning by identifying and selecting the most relevant and informative features from a dataset. Carol discovered that datasets often contain a multitude of features, and not all of them contribute equally to the predictive power of a model. In fact, some features may be redundant or noisy, which can negatively impact the model's performance and increase computational complexity. Feature selection aimed to address these issues by selecting a subset of features that capture the most relevant information for making accurate predictions. The first technique Carol encountered was the filter approach to feature selection. This method involves evaluating the characteristics of individual features independent of any specific machine learning algorithm. Common metrics used in the filter approach include correlation coefficients, mutual information, chi-square tests, or statistical tests like ANOVA. By ranking the features based on their relevance to the target variable, Carol realized that she could select the top-ranked features for further model training. Next, Carol explored the wrapper approach to feature selection. Unlike the filter approach, the wrapper approach evaluates the performance of a specific machine learning algorithm by iteratively selecting different subsets of features. This technique involves training and evaluating the model multiple times, which can be computationally expensive but provides more accurate feature rankings. Methods such as forward selection, backward elimination, or recursive feature elimination belong to the wrapper approach. Carol also learned about the embedded approach to feature selection. Embedded methods incorporate feature selection directly into the process of training a machine learning model. Certain algorithms, such as Lasso (Least Absolute Shrinkage and Selection Operator) and Ridge regression, have built-in mechanisms that penalize or eliminate irrelevant features during the training process. By using these embedded methods, Carol discovered that she could simultaneously perform feature selection and model training. As Carol continued her exploration, she realized the importance of feature selection in improving model performance, reducing overfitting, and increasing interpretability. By selecting the most relevant features, she could simplify the model, reduce computational costs, and enhance generalization to new data. Excited by her newfound knowledge of feature selection, Carol began to envision its application in various domains. She imagined its potential in areas such as healthcare, finance, and image recognition, where selecting the right set of features could lead to more accurate predictions and valuable insights. With feature selection, Carol understood that she could refine the input variables of a machine learning model, optimizing its performance and uncovering hidden patterns within the data. It was another fascinating aspect of the AI landscape that sparked her imagination and reinforced her passion for exploring the limitless possibilities of artificial intelligence. Continuing her exploration of AI concepts, Carol became intrigued by the topic of model training. She learned that model training was a crucial step in machine learning, where a model learned from the available data to make predictions or perform tasks. Carol discovered that model training involved feeding the machine learning algorithm with labeled examples, also known as the training data. The algorithm then analyzed the data, adjusted its internal parameters, and learned to make predictions based on patterns and relationships present in the training data. She realized that different algorithms required different approaches to training. For example, supervised learning algorithms, such as linear regression or support vector machines, learned from labeled examples where the input features were paired with corresponding target labels. The model adjusted its parameters to minimize the difference between its predicted outputs and the true labels. Unsupervised learning algorithms, on the other hand, analyzed unlabeled data to discover patterns, structures, or clusters. Techniques like clustering or dimensionality reduction helped uncover inherent relationships within the data without the need for explicit labels. Carol found it fascinating how these algorithms could reveal hidden insights and provide a deeper understanding of the data. Reinforcement learning caught Carol's attention as well. In this type of learning, an agent interacted with an environment, learned from rewards and punishments, and adjusted its behavior to maximize cumulative rewards. She saw parallels between reinforcement learning and her childhood experiences of learning through trial and error, with the agent gradually improving its decision-making abilities. As Carol delved into the world of model training, she realized the significance of hyperparameter tuning. Hyperparameters were settings or configurations of the learning algorithms that were not learned from the data itself. They controlled the behavior and performance of the model. Techniques like grid search or random search helped find the optimal combination of hyperparameters to improve model performance. Carol was fascinated by the iterative nature of model training. It involved selecting an appropriate algorithm, preparing the data, feeding it to the algorithm, adjusting parameters, evaluating performance, and repeating the process until satisfactory results were achieved. With a sense of awe and appreciation for the complexity and power of model training, Carol saw how it formed the foundation of AI systems. It was the process that allowed machines to learn from data, make predictions, and accomplish tasks that once seemed reserved for human intelligence. As she continued her exploration, Carol looked forward to unraveling the subsequent steps of model evaluation and deployment. She realized that these steps were essential to ensure the reliability, robustness, and real-world applicability of AI systems.`,
                 },
+                {
+                    type: 'text',
+                    text: 'Ever played the famous google doole game, Quick, Draw! ? Well, it is a good example that shows model training by guessing what you are drawing off of previous drawings by other people.',
+                },
+            ],
+            choices: [
+                {
+                    text: 'Try it out!',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['quick-draw-minigame'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        }, 
+        {
+            id: 'quick-draw-minigame',
+            convo: [
+                {
+                    type: 'text',
+                    text: `It takes into account the shapes you draw, the order of your drawing strokes, and the direction in which you draw.`,
+                },
+                {
+                    type: 'text',
+                    text: `https://quickdraw.withgoogle.com/`,
+                }
             ],
             choices: [
                 {
