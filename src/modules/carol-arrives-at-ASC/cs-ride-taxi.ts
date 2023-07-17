@@ -829,6 +829,24 @@ const rideTaxi = make.module({
                         },
                     ],
                 },
+                {
+                    text: 'An Interesting Store...',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: [
+                                        'root',
+                                        'carol-arrives-at-ASC',
+                                        'hiddentreasurescarolvisitsaninterestingstore',
+                                        'opening',
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
                 
                 
             ],

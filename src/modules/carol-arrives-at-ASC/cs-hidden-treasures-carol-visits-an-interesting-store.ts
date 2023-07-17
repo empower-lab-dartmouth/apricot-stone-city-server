@@ -866,7 +866,7 @@ const hiddentreasurescarolvisitsaninterestingstore = make.module({
                             do: [
                                 {
                                     type: 'goto',
-                                    path: ['completed'],
+                                    path: ['minigame'],
                                 },
                             ],
                         },
@@ -937,13 +937,38 @@ const hiddentreasurescarolvisitsaninterestingstore = make.module({
                 },
             ],
         },
+        {
+            id: 'minigame',
+            convo: [
+                {
+                    type: 'text',
+                    text: `Great job! Now for a game that will help us appreciate the capability of AI to analyze large datasets using feature sets to come to conclusions. 
+                    Play at https://quickdraw.withgoogle.com/`,
+                },
+            ],
+            choices: [
+                {
+                    text: 'I\'m done!',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['completed'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
 
         {
             id: 'completed',
             convo: [
                 {
                     type: 'text',
-                    text: `Great job! Let\'s continue the journey`,
+                    text: `Time to continue the journey`,
                 },
             ],
             choices: [
