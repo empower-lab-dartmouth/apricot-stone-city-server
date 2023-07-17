@@ -104,7 +104,7 @@ const chatGPTrevolutionizesschool = make.module({
                                 {
                                     type: 'goto',
                                     path: ['root',
-                                'norman-adventure',
+                                'norman-arrives-at-ASC',
                                 'enteringWorldAware',
                                 'whats-going-on',
 
