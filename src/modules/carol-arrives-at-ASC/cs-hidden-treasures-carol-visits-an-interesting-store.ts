@@ -945,6 +945,10 @@ const hiddentreasurescarolvisitsaninterestingstore = make.module({
                     text: `Great job! Now for a game that will help us appreciate the capability of AI to analyze large datasets using feature sets to come to conclusions. 
                     Play at https://quickdraw.withgoogle.com/`,
                 },
+                {
+                    type: 'image',
+                    src: 'https://cdn.dribbble.com/users/94569/screenshots/3573285/quick_draw_logo_bannerandfinger-01.png',
+                },
             ],
             choices: [
                 {
