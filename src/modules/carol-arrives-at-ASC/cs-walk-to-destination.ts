@@ -357,7 +357,7 @@ const walkToDestination = make.module({
                     ],
                 },
                 {
-                    text: 'She ran for cover.',
+                    text: 'She stole an umbrella from someone.',
                     correctAnswer: false,
                     logic: [
                         {
@@ -606,7 +606,7 @@ const walkToDestination = make.module({
             ],
             choices: [
                 {
-                    text: 'Adaptation to changing circumstances.',
+                    text: 'Continuous evaluation and adjustment.',
                     correctAnswer: false,
                     logic: [
                         {
