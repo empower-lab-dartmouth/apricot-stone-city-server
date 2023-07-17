@@ -24,6 +24,7 @@ import pickupFromCascade from './cs-pickup-from-cascade'
 import normanLearnsToWorkWithLargeDataSetsOnComputer from './cs-norman-learns-to-work-with-large-data-sets-on-computer'
 import lookingAtClouds from './cs-looking-at-clouds-from-a-plane-window'
 import liaTestRun from './cs-lia-test-run'
+import hiddentreasurescarolvisitsaninterestingstore from './cs-hidden-treasures-carol-visits-an-interesting-store'
 
 const carolArrivesAtASC = make.module({
     id: 'carol-arrives-at-ASC',
