@@ -830,7 +830,7 @@ const rideTaxi = make.module({
                     ],
                 },
                 {
-                    text: 'Taxi to Destination',
+                    text: 'An interesting store...',
                     logic: [
                         {
                             do: [
