@@ -1,7 +1,7 @@
 import make from '../../core/util/make'
 
 const chatGPTrevolutionizesschool = make.module({
-    id: 'hidden-treasures-carol-visits-an-interesting-store',
+    id: 'chatGPT-revolutionizes-school',
     submodules: [],
     convoSegments: [
         {
