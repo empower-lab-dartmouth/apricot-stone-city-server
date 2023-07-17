@@ -52,6 +52,7 @@ const carolArrivesAtASC = make.module({
         pickupFromCascade,
         normanLearnsToWorkWithLargeDataSetsOnComputer,
         liaTestRun,
+        hiddentreasurescarolvisitsaninterestingstore,
     ],
     convoSegments: [],
 })
