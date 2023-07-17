@@ -839,7 +839,7 @@ const rideTaxi = make.module({
                                     path: [
                                         'root',
                                         'carol-arrives-at-ASC',
-                                        'hiddentreasurescarolvisitsaninterestingstore',
+                                        'hidden-treasures-carol-visits-an-interesting-store',
                                         'opening',
                                     ],
                                 },
