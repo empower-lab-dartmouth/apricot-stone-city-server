@@ -10,7 +10,7 @@ const aWomanStopsHerCar = make.module({
                 {
                     type: 'text',
                     text:
-                        '<b>It is raining heavily. Carol is wet and frustrated. She does not know where she is. A car stops and the driver is an old-looking woman looks out of the window.</b>',
+                        '<b>It is raining heavily! Carol is wet and frustrated. She does not know where she is. A car stops and the driver is an old-looking woman looks out of the window.</b>',
                 },
             ],
             choices: [
