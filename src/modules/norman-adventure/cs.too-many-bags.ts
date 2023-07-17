@@ -94,8 +94,26 @@ const tooManyBags = make.module({
                                         'root',
                                         'norman-arrives-at-ASC',
                                         'road-hotel',
-                                        'go-to-hotel',
-                                    ], //second end
+                                        'go-to-hotel', // second ending
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    text: 'Take a bit of LSD to make the traffic more interesting',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: [
+                                        'root',
+                                        'norman-arrives-at-ASC',
+                                        'ego-death',
+                                        'drugs', // third ending
+                                    ], 
                                 },
                             ],
                         },
