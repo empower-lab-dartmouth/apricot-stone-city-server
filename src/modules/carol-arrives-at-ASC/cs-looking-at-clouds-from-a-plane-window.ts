@@ -253,6 +253,46 @@ const lookingAtClouds = make.module({
             ],
             choices: [
                 {
+                    text: 'Read a quick article about the rising issues between art and AI! ',
+                    logic: [
+                        {
+                            do: [
+                                {
+                                    type: 'goto',
+                                    path: ['real-life-drawing-ai'],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        }, 
+        {
+            id: 'real-life-drawing-ai',
+            convo: [
+                {
+                    type: 'text',
+                    text: `Though with Quick, Draw! it was a fun game where the computer used drawings from other people to guess your drawing, it can actually be detrimental in larger-scale real world scenarios.`,
+                },
+                {
+                    type: 'text',
+                    text: `There has been AI developed for the public, where although it is fun to experiment with, individuals have created a new dilemma in the artistic world: AI is told to generate images or 'art' pieces based of prompts written by a human, and it then pulls images from all over the internet. That includes already existing digital art and physical art uploaded to the internet pulled together to make 'new' art but less time consuming. With this, artists are faced with a new challenge and will put them out of work due to this technology, which will affect the movies, shows, and games we see and use everyday. The more images and drawings are fed into an AI program, the more it refines its output that will resemble human-made art. `,
+                },
+                {
+                    type: 'text',
+                    text: 'To learn more about the new phenomenon between AI and digital art, follow this link: '
+                },
+                {
+                    type: 'text',
+                    text: `An A.I.-Generated Picture Won an Art Prize. Artists Are Not Happy. (NY Times)`
+                },
+                {
+                    type: 'text',
+                    text: `https://www.nytimes.com/2022/09/02/technology/ai-artificial-intelligence-artists.html`
+                }
+            ],
+            choices: [
+                {
                     text: 'Dive into a topic',
                     logic: [
                         {
