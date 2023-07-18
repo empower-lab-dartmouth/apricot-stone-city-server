@@ -923,12 +923,12 @@ const meghanOnTheTrain = make.module({
             convo: [
                 {
                     type: 'text',
-                    text: `Great job! Let's end the journey`,
+                    text: `Great job! Let's continue the journey`,
                 },
             ],
             choices: [
                 {
-                    text: 'End the journey',
+                    text: 'Continue the journey',
                     logic: [
                         {
                             do: [
@@ -936,9 +936,9 @@ const meghanOnTheTrain = make.module({
                                     type: 'goto',
                                     path: [
                                         'root',
-                                        'carol-arrives-at-ASC',
-                                        'hot-and-cold-minigame',
-                                        'game-ends',
+                                        'meghan-arrives-at-ASC',
+                                        'meghans-yerevan-concert',
+                                        'setting',
                                     ],
                                 },
                             ],
